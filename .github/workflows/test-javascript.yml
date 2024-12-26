@@ -22,8 +22,6 @@ jobs:
         node-version: ["18.x", "20.x", "22.x"]
         include:
           # See https://github.com/cucumber/gherkin-utils/issues/2
-          # - os: windows-latest
-          #   node-version: "18.x"
           - os: macos-latest
             node-version: "18.x"
 
