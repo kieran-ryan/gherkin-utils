@@ -17,13 +17,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os:
-          - ubuntu-latest
+        os: [macos-latest, ubuntu-latest, windows-latest]
         node-version: ["18.x", "20.x", "22.x"]
-        include:
-          # See https://github.com/cucumber/gherkin-utils/issues/2
-          - os: macos-latest
-            node-version: "18.x"
 
     steps:
       - name: set git core.autocrlf to 'input'
